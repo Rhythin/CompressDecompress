@@ -1,0 +1,6 @@
+give option to user for extension
+
+give file size beofre and after
+
+huffman encoding decoding
+
