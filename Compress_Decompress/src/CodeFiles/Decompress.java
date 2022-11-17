@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.zip.GZIPInputStream;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -22,7 +23,9 @@ public class Decompress {
         
         FileInputStream fis = new FileInputStream(file);
         GZIPInputStream gzipIS = new GZIPInputStream(fis);
-        FileOutputStream fos = new FileOutputStream(fileDir+"\\uncompressedfile.txt");
+        
+        String extension=JOptionPane.showInputDialog("enter uncompressed file extension.(Example txt, mkv, pdf)");
+        FileOutputStream fos = new FileOutputStream(fileDir+"\\uncompressedfile."+extension);
         
         byte buffer[]=new byte[1024];
         int len;
@@ -34,6 +37,8 @@ public class Decompress {
         gzipIS.close();
         fis.close();
         fos.close();
+        
+        
     }
     public static void main(String args[]) throws IOException{
         File path= new File("E:\\software\\Java files\\NetBeans_Projects\\Compress_Decompress\\TestFolder\\compressedfile.gz");

@@ -4,6 +4,7 @@
  */
 package CodeFiles;
 
+import GUI.filesizeview;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -33,6 +34,8 @@ public class Compress {
         fis.close();
         gzipOS.close();
         fos.close();
+        
+        filesizeview filesize=new filesizeview(file, new File(fileDir+"\\compressedfile.gz"));
         
     }
     public static void main(String args[]) throws IOException, FileNotFoundException{

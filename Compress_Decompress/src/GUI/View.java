@@ -61,6 +61,7 @@ public class View extends JFrame implements ActionListener{
                     JOptionPane.showMessageDialog(null, excp.toString());
                 }
             }
+            
         }
         if(e.getSource()== DecompressButton){
             JFileChooser fileChooser=new JFileChooser();
@@ -75,6 +76,7 @@ public class View extends JFrame implements ActionListener{
                 catch(Exception excp){
                     JOptionPane.showMessageDialog(null, excp.toString());
                 }
+                JOptionPane.showMessageDialog(null, "Decompressed");
             }            
         }
     }
