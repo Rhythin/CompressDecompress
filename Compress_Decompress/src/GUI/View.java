@@ -24,8 +24,10 @@ public class View extends JFrame implements ActionListener{
     JButton CompressButton;
     JButton DecompressButton;
     
+    
     public View(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setTitle("Compress_Decompress");
         this.setSize(500, 200);
         this.setLayout(null);
         this.setLocationRelativeTo(null);
