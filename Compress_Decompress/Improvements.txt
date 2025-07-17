@@ -1,6 +1,0 @@
-1) added ability to chose file loction
-2) added popup messages for when compression/ decompression is done
-3) added ability to specify the file extension when decompressing
-4) added ability use more file types and extensions
-5) added UI imporvements 
-6) added pop up after compression mentioning the file size before and after and how much size has been reduced
